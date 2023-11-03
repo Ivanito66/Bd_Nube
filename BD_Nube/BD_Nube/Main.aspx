@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="factura2.aspx.cs" Inherits="factura2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Main.aspx.cs" Inherits="Main" %>
 
 <!DOCTYPE html>
 
@@ -99,14 +99,10 @@
         </header>
         <div class="container">
             <div class="filters">
-                <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="FiltrarFacturas" AutoPostBack="true" CssClass="filter-select">
-                </asp:DropDownList>
-                <asp:DropDownList ID="DropDownList2" runat="server" OnSelectedIndexChanged="FiltrarFacturas" AutoPostBack="true" CssClass="filter-select">
-                </asp:DropDownList>
-                <asp:Button ID="btnResetFiltros" runat="server" Text="Restablecer Filtros" OnClick="ResetFiltros" CssClass="btn" />
+                
             </div>
             <div class="buttons">
-                <asp:Button ID="btnExport" runat="server" Text="Descargar" OnClick="ExportXLS" CssClass="btn" />
+               
             </div>
         </div>
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="true" CssClass="gridview">
